@@ -1,0 +1,247 @@
+{
+	"info": {
+		"_postman_id": "ff7e419e-cfc6-4eef-b001-abfd833cf5ce",
+		"name": "Parcial",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "PizzaCarga",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/zPizzeria/PizzaCarga.php?sabor=Napolitana&precio=1&tipo=molde&cantidad=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"zPizzeria",
+						"PizzaCarga.php"
+					],
+					"query": [
+						{
+							"key": "sabor",
+							"value": "Napolitana"
+						},
+						{
+							"key": "precio",
+							"value": "1"
+						},
+						{
+							"key": "tipo",
+							"value": "molde"
+						},
+						{
+							"key": "cantidad",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PizzaConsultar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sabor",
+							"value": "A",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "molde",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/zPizzeria/PizzaConsultar.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"zPizzeria",
+						"PizzaConsultar.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AltaVenta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "mail",
+							"value": "VendedorRandom@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "sabor",
+							"value": "Napolitana",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "molde",
+							"type": "text"
+						},
+						{
+							"key": "cantidad",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "foto",
+							"type": "file",
+							"src": "/C:/Users/leand/Desktop/COSAS IMPORTANTES/AnimalitoSonriendo.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/zPizzeria/AltaVenta.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"zPizzeria",
+						"AltaVenta.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ConsultaVentas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/zPizzeria/ConsultaVentas.php?punto=D",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"zPizzeria",
+						"ConsultaVentas.php"
+					],
+					"query": [
+						{
+							"key": "punto",
+							"value": "D"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PizzaCargaPost",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sabor",
+							"value": "Fugaza ",
+							"type": "text"
+						},
+						{
+							"key": "cantidad",
+							"value": "1000",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "molde",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/zPizzeria/PizzaCargaPOST.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"zPizzeria",
+						"PizzaCargaPOST.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ModificarVenta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "numeroPedido",
+							"value": "46",
+							"type": "text"
+						},
+						{
+							"key": "mail",
+							"value": "modificado@modificado.com",
+							"type": "text"
+						},
+						{
+							"key": "sabor",
+							"value": "modificado",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "molde",
+							"type": "text"
+						},
+						{
+							"key": "cantidad",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/zPizzeria/ModificarVenta.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"zPizzeria",
+						"ModificarVenta.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
